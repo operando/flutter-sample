@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: title,
-      routes:  <String, WidgetBuilder> {
+      routes: <String, WidgetBuilder>{
         '/a': (BuildContext context) => new MyApp(title: 'page A'),
         '/b': (BuildContext context) => new MyApp(title: 'page B'),
         '/c': (BuildContext context) => new MyApp(title: 'page C'),
@@ -100,6 +100,9 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            new RaisedButton(
+                child: const Text('RAISED BUTTON'),
+                onPressed: _incrementCounter),
             new Text(
               'You have pushed the button this many times:',
             ),
