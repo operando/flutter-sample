@@ -100,6 +100,13 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            new Row(
+              children: <Widget>[
+                new Text("test"),
+                new Text("test"),
+                new Text("test")
+              ],
+            ),
             new RaisedButton(
                 child: const Text('RAISED BUTTON'),
                 onPressed: _incrementCounter),
